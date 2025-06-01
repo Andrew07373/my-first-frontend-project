@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: yellow;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffbe6 0%, springgreen 60%, yellow 100%);
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.letters p {
+  text-align: center;
+  background-color: springgreen;
+  width: 70px;
+  margin-right: 1.5px;
+  border-radius: 15%;
+  border-color: springgreen;
+  border-style: solid;
+}
+
+.letters:hover p:nth-child(even) {
+  transform: rotateY(360deg);
+  transition: 0.5s;
+}
+
+.letters:hover p:nth-child(odd) {
+  transform: rotateX(360deg);
+  transition: 1.5s;
+}
+
+.welcome-message {
+  color: #4169e1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+  margin-right: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 24px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #ffd600;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  background: linear-gradient(135deg, #fffbe6 0%, springgreen 60%, yellow 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: background 0.2s;
+}
+
+label[for="username"],
+label[for="password"] {
+  color: #ffd600;
+}
+
+#username,
+#password {
+  color: #ffd600;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  color: #ffd600;
+  border: 2px solid #ffd600;
+  background: #fffbe6;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: springgreen;
+  color: #fffbe6;
+}
+
+.form,
+.form * {
+  color: #ffd600;
+  background: transparent;
+}
+
+.book main,
+.book main * {
+  color: #ffd600;
+  background: transparent;
+}
